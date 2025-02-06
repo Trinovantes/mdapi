@@ -1,0 +1,3 @@
+export const MAX_PAGINATION_RESULTS = 10000
+export const MAX_IDS_PER_QUERY = 100
+export const MAX_FEED_PER_QUERY = 500

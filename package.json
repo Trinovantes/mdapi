@@ -1,0 +1,55 @@
+{
+    "name": "@trinovantes/mdapi",
+    "type": "module",
+    "version": "0.1.0",
+    "description": "MangaDex API wrapper",
+    "license": "MIT",
+    "private": false,
+    "sideEffects": false,
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.umd.cjs"
+        }
+    },
+    "files": [
+        "tsconfig.json",
+        "dist/*",
+        "src/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Trinovantes/mdapi"
+    },
+    "author": {
+        "name": "Stephen",
+        "email": "hello@stephenli.ca",
+        "url": "https://www.stephenli.ca"
+    },
+    "scripts": {
+        "clean": "rm -rf ./dist ./demo/dist",
+        "build": "yarn clean && vite build",
+        "prepublishOnly": "yarn build",
+        "lint": "vue-tsc --noemit && eslint",
+        "cloc": "cloc --vcs=git"
+    },
+    "devDependencies": {
+        "@eslint/compat": "^1.1.0",
+        "@eslint/js": "^9.4.0",
+        "@stylistic/eslint-plugin": "^3.0.1",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.10.0",
+        "eslint": "^9.4.0",
+        "eslint-plugin-n": "^17.7.0",
+        "eslint-plugin-vue": "^9.9.0",
+        "globals": "^15.3.0",
+        "typescript": "^5.8.0-dev.20250205",
+        "typescript-eslint": "^8.0.0-alpha.24",
+        "vite": "^6.0.1",
+        "vite-plugin-dts": "^4.0.2",
+        "vitest": "^3.0.2",
+        "vue": "^3.4.30",
+        "vue-tsc": "^2.0.29"
+    }
+}
