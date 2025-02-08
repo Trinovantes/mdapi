@@ -32,6 +32,7 @@
         "build": "yarn clean && vite build",
         "prepublishOnly": "yarn build",
         "lint": "vue-tsc --noemit && eslint",
+        "test": "vitest",
         "cloc": "cloc --vcs=git"
     },
     "devDependencies": {
