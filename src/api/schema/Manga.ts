@@ -223,7 +223,7 @@ function getMangaReadingStatusEndpoint(apiUrl: string, mangaId: string) {
     return `${apiUrl}/manga/${mangaId}/status`
 }
 
-export async function fetchMangaCollectionReadingStatus(apiUrl: string, accessToken: MdAccessToken): Promise<MdMangaReadingStatusesResponse['statuses']> {
+export async function fetchMangasReadingStatus(apiUrl: string, accessToken: MdAccessToken): Promise<MdMangaReadingStatusesResponse['statuses']> {
     const url = getMangasReadingStatusEndpoint(apiUrl)
     const res = await fetchMangaDex<MdMangaReadingStatusesResponse>(url, {
         headers: {
