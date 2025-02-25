@@ -24,9 +24,12 @@
         "strictFunctionTypes": true,
         "strictNullChecks": true,
         "erasableSyntaxOnly": true,
+        "exactOptionalPropertyTypes": true,
+        "useUnknownInCatchVariables": true,
 
         "noUnusedLocals": true,
         "noImplicitReturns": true,
+        "noImplicitThis": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
 
