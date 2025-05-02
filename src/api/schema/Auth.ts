@@ -42,7 +42,10 @@ export async function fetchLogin(apiUrl: string, payload: MdLoginPayload, header
 
 export type RefreshResponse = {
     access_token: string
+    expires_in: number // sec
+
     refresh_token: string
+    refresh_expires_in: number // sec
 }
 
 export async function fetchRefreshToken(apiUrl: string, refreshToken: MdRefreshToken, headers?: Record<string, string>): Promise<RefreshResponse> {
