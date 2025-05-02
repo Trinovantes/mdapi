@@ -15,7 +15,10 @@ export type MdLoginPayload = {
 
 export type MdLoginResponse = {
     access_token: MdAccessToken
+    expires_in: number // sec
+
     refresh_token: MdRefreshToken
+    refresh_expires_in: number // sec
 }
 
 export async function fetchLogin(apiUrl: string, payload: MdLoginPayload, headers?: Record<string, string>): Promise<MdLoginResponse> {
