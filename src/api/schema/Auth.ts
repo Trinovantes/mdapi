@@ -11,6 +11,8 @@ export type MdRefreshToken = Brand<string, 'MdRefreshToken'>
 export type MdLoginPayload = {
     username: string
     password: string
+    client_id?: string
+    client_secret?: string
 }
 
 export type MdLoginResponse = {
@@ -26,8 +28,7 @@ export async function fetchLogin(apiUrl: string, payload: MdLoginPayload, header
         method: 'POST',
         body: new URLSearchParams({
             grant_type: 'password',
-            username: payload.username,
-            password: payload.password,
+            ...payload,
         }),
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
