@@ -358,8 +358,8 @@ export function getMangaTitle(mangaAttr?: MdManga['attributes'], language: MdLan
     }
 
     for (const altTitle of mangaAttr?.altTitles ?? []) {
-        for (const [language, titleString] of Object.entries(altTitle)) {
-            if (language === language) {
+        for (const [altTitleLanguage, titleString] of Object.entries(altTitle)) {
+            if (altTitleLanguage === language) {
                 return titleString + yearSuffix
             }
         }
