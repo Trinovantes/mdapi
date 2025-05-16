@@ -365,6 +365,7 @@ export function getMangaTitle(mangaAttr?: MdManga['attributes'], language: MdLan
         }
     }
 
+    const anyTitle = Object.values(mangaAttr?.title ?? {})[0]
     const anyAltTitle = Object.values(mangaAttr?.altTitles?.[0] ?? {})[0]
-    return (anyAltTitle ?? 'Untitled Manga') + yearSuffix
+    return (anyTitle ?? anyAltTitle ?? 'Untitled Manga') + yearSuffix
 }
