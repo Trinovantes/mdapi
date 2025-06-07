@@ -1,7 +1,7 @@
 {
     "name": "@trinovantes/mdapi",
     "type": "module",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "description": "MangaDex API wrapper",
     "license": "MIT",
     "private": false,
