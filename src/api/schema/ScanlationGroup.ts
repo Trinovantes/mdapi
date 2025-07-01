@@ -1,6 +1,6 @@
-import { Brand } from '@/Brand.js'
-import { MdEntityResponse } from '../Response.js'
-import { fetchMangaDexByIds } from '@/utils/fetchMangaDex.js'
+import type { Brand } from '../../Brand.js'
+import type { MdEntityResponse } from '../Response.js'
+import { fetchMangaDexByIds } from '../../utils/fetchMangaDex.js'
 
 export type MdScanlationGroupAttributes = {
     name: string

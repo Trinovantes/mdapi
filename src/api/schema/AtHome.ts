@@ -1,6 +1,6 @@
 import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
 import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
-import { MdChapterId } from './Chapter.js'
+import type { MdChapterId } from './Chapter.js'
 
 export type MdAtHomeResponse = {
     baseUrl: string

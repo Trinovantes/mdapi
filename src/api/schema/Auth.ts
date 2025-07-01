@@ -1,4 +1,4 @@
-import { Brand } from '@/Brand.js'
+import type { Brand } from '../../Brand.js'
 import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
 
 export type MdAccessToken = Brand<string, 'MdAccessToken'>

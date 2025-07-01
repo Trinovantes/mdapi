@@ -1,7 +1,7 @@
-import { Brand } from '@/Brand.js'
-import { findRelationship, mapResponseToRelationships, MdEntityResponse } from '../Response.js'
-import { MdManga, MdMangaId } from './Manga.js'
-import { fetchMangaDexByIds } from '@/utils/fetchMangaDex.js'
+import { findRelationship, mapResponseToRelationships, type MdEntityResponse } from '../Response.js'
+import type { MdManga, MdMangaId } from './Manga.js'
+import { fetchMangaDexByIds } from '../../utils/fetchMangaDex.js'
+import type { Brand } from '../../Brand.js'
 
 export type MdCoverAttributes = {
     volume: string | null

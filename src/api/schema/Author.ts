@@ -1,9 +1,9 @@
-import { Brand } from '@/Brand.js'
-import { MdAttributeType, MdEntityResponse, MdCollectionResponse } from '../Response.js'
-import { MdSortOrder } from './SortOrder.js'
-import { fetchMangaDexByIds } from '@/utils/fetchMangaDex.js'
-import { createSearchParamUrl } from '@/utils/createSearchParamUrl.js'
-import { fetchMangaDex } from '@/utils/fetchMangaDex.js'
+import type { MdAttributeType, MdEntityResponse, MdCollectionResponse } from '../Response.js'
+import type { MdSortOrder } from './SortOrder.js'
+import { fetchMangaDexByIds } from '../../utils/fetchMangaDex.js'
+import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
+import type { Brand } from '../../Brand.js'
 
 export type MdAuthorAttributes = {
     name: string

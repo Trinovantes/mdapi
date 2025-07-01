@@ -1,6 +1,6 @@
-import { MAX_IDS_PER_QUERY } from '@/api/Constants.js'
-import { MdAttributeType, MdEntityResponse, MdCollectionResponse } from '../api/Response.js'
-import { createSearchParamUrl, SearchParam } from './createSearchParamUrl.js'
+import { MAX_IDS_PER_QUERY } from '../api/Constants.js'
+import type { MdAttributeType, MdEntityResponse, MdCollectionResponse } from '../api/Response.js'
+import { createSearchParamUrl, type SearchParam } from './createSearchParamUrl.js'
 
 export async function fetchMangaDex<T>(url: string, config: RequestInit = { method: 'GET' }, responseIsJson = true): Promise<T> {
     const res = await fetch(url, config)

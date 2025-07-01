@@ -1,38 +1,38 @@
-import { MdCollectionResponse } from '@/api/Response.js'
-import { MdAccessToken } from './Auth.js'
-import { MdChapterQuery, MD_FETCH_CHAPTERS_BASE_QUERY } from './Chapter.js'
-import { MD_FETCH_MANGA_BASE_QUERY, MdMangaId, MdMangaQuery } from './Manga.js'
-import { createSearchParamUrl } from '@/utils/createSearchParamUrl.js'
-import { fetchMangaDex } from '@/utils/fetchMangaDex.js'
+import type { MdCollectionResponse } from '../Response.js'
+import type { MdAccessToken } from './Auth.js'
+import { type MdChapterQuery, MD_FETCH_CHAPTERS_BASE_QUERY } from './Chapter.js'
+import { MD_FETCH_MANGA_BASE_QUERY, type MdMangaId, type MdMangaQuery } from './Manga.js'
+import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
 
 export type MdFollowsMangaListQuery = Pick<MdMangaQuery,
-    'limit' |
-    'offset' |
+    | 'limit'
+    | 'offset'
 
-    'includes'
+    | 'includes'
 >
 
 export type MdFollowsChapterFeedQuery = Pick<MdChapterQuery,
-    'limit' |
-    'offset' |
+    | 'limit'
+    | 'offset'
 
-    'order[createdAt]' |
-    'order[updatedAt]' |
-    'order[publishAt]' |
-    'order[volume]' |
-    'order[chapter]' |
+    | 'order[createdAt]'
+    | 'order[updatedAt]'
+    | 'order[publishAt]'
+    | 'order[volume]'
+    | 'order[chapter]'
 
-    'translatedLanguage' |
-    'originalLanguage' |
-    'excludedOriginalLanguage' |
-    'contentRating' |
-    'includeFutureUpdates' |
+    | 'translatedLanguage'
+    | 'originalLanguage'
+    | 'excludedOriginalLanguage'
+    | 'contentRating'
+    | 'includeFutureUpdates'
 
-    'createdAtSince' |
-    'updatedAtSince' |
-    'publishAtSince' |
+    | 'createdAtSince'
+    | 'updatedAtSince'
+    | 'publishAtSince'
 
-    'includes'
+    | 'includes'
 >
 
 // ----------------------------------------------------------------------------

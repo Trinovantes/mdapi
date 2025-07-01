@@ -28,17 +28,16 @@
         "url": "https://www.stephenli.ca"
     },
     "scripts": {
-        "clean": "rm -rf ./dist ./demo/dist",
-        "build": "yarn clean && vite build",
-        "prepublishOnly": "yarn build",
-        "lint": "vue-tsc --noemit && eslint",
+        "build": "vite build",
+        "prepublishOnly": "rm -rf ./dist && pnpm build",
+        "lint": "tsc && eslint",
         "test": "vitest",
         "cloc": "cloc --vcs=git"
     },
     "devDependencies": {
         "@eslint/compat": "^1.1.0",
         "@eslint/js": "^9.4.0",
-        "@stylistic/eslint-plugin": "^4.1.0",
+        "@stylistic/eslint-plugin": "^5.1.0",
         "@types/node": "^22.10.0",
         "eslint": "^9.4.0",
         "eslint-plugin-n": "^17.7.0",
@@ -46,11 +45,11 @@
         "globals": "^16.0.0",
         "typescript": "^5.8.1-rc",
         "typescript-eslint": "^8.0.0-alpha.24",
-        "vite": "^6.0.1",
+        "vite": "^7.0.0",
         "vite-plugin-dts": "^4.0.2",
         "vitest": "^3.0.7",
         "vue": "^3.4.30",
         "vue-eslint-parser": "^10.1.3",
-        "vue-tsc": "^2.0.29"
+        "vue-tsc": "^3.0.6"
     }
 }

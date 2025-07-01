@@ -1,7 +1,7 @@
-import { MdLocalizedString } from './Language.js'
-import { MdCollectionResponse, MdEntityResponse } from '../Response.js'
-import { Brand } from '@/Brand.js'
-import { fetchMangaDex } from '@/utils/fetchMangaDex.js'
+import type { MdLocalizedString } from './Language.js'
+import type { MdCollectionResponse, MdEntityResponse } from '../Response.js'
+import type { Brand } from '../../Brand.js'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
 
 export type MdTagAttributes = {
     name: MdLocalizedString

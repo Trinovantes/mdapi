@@ -1,13 +1,12 @@
-import { MdLanguage } from './Language.js'
-import { MdContentRating, MdMangaId } from './Manga.js'
-import { MdAttributeType, MdCollectionResponse, MdEntityResponse } from '../Response.js'
-import { MdSortOrder } from './SortOrder.js'
-import { Brand } from '@/Brand.js'
-import { MdScanlationGroupId } from './ScanlationGroup.js'
-import { MdUploaderId } from './Uploader.js'
-import { fetchMangaDexByIds } from '@/utils/fetchMangaDex.js'
-import { createSearchParamUrl } from '@/utils/createSearchParamUrl.js'
-import { fetchMangaDex } from '@/utils/fetchMangaDex.js'
+import type { MdLanguage } from './Language.js'
+import type { MdContentRating, MdMangaId } from './Manga.js'
+import type { MdAttributeType, MdCollectionResponse, MdEntityResponse } from '../Response.js'
+import type { MdSortOrder } from './SortOrder.js'
+import type { MdScanlationGroupId } from './ScanlationGroup.js'
+import type { MdUploaderId } from './Uploader.js'
+import type { Brand } from '../../Brand.js'
+import { fetchMangaDex, fetchMangaDexByIds } from '../../utils/fetchMangaDex.js'
+import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
 
 export type MdChapterAttributes = {
     title: string

@@ -1,7 +1,7 @@
-import { fetchMangaDex } from '@/utils/fetchMangaDex.js'
-import { MdMangaId } from './Manga.js'
-import { MAX_IDS_PER_QUERY } from '@/api/Constants.js'
-import { createSearchParamUrl } from '@/utils/createSearchParamUrl.js'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
+import type { MdMangaId } from './Manga.js'
+import { MAX_IDS_PER_QUERY } from '../Constants.js'
+import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
 
 // ----------------------------------------------------------------------------
 // MARK: API
