@@ -6,33 +6,33 @@ import { createSearchParamUrl } from '@/utils/createSearchParamUrl.js'
 import { fetchMangaDex } from '@/utils/fetchMangaDex.js'
 
 export type MdFollowsMangaListQuery = Pick<MdMangaQuery,
-    'limit' |
-    'offset' |
+    | 'limit'
+    | 'offset'
 
-    'includes'
+    | 'includes'
 >
 
 export type MdFollowsChapterFeedQuery = Pick<MdChapterQuery,
-    'limit' |
-    'offset' |
+    | 'limit'
+    | 'offset'
 
-    'order[createdAt]' |
-    'order[updatedAt]' |
-    'order[publishAt]' |
-    'order[volume]' |
-    'order[chapter]' |
+    | 'order[createdAt]'
+    | 'order[updatedAt]'
+    | 'order[publishAt]'
+    | 'order[volume]'
+    | 'order[chapter]'
 
-    'translatedLanguage' |
-    'originalLanguage' |
-    'excludedOriginalLanguage' |
-    'contentRating' |
-    'includeFutureUpdates' |
+    | 'translatedLanguage'
+    | 'originalLanguage'
+    | 'excludedOriginalLanguage'
+    | 'contentRating'
+    | 'includeFutureUpdates'
 
-    'createdAtSince' |
-    'updatedAtSince' |
-    'publishAtSince' |
+    | 'createdAtSince'
+    | 'updatedAtSince'
+    | 'publishAtSince'
 
-    'includes'
+    | 'includes'
 >
 
 // ----------------------------------------------------------------------------
