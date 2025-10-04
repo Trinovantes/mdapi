@@ -1,6 +1,6 @@
-import { findRelationship } from '../Response.js'
-import type { MdChapter, MdChapterId } from './Chapter.js'
-import type { MdMangaId } from './Manga.js'
+import { findRelationship } from '../Response.ts'
+import type { MdChapter, MdChapterId } from './Chapter.ts'
+import type { MdMangaId } from './Manga.ts'
 
 export type MdChapterGroup<K = string> = {
     key: K

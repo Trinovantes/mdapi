@@ -1,6 +1,6 @@
-import type { MdEntityResponse } from '../Response.js'
-import { fetchMangaDexByIds } from '../../utils/fetchMangaDex.js'
-import type { Brand } from '../../Brand.js'
+import type { MdEntityResponse } from '../Response.ts'
+import { fetchMangaDexByIds } from '../../utils/fetchMangaDex.ts'
+import type { Brand } from '../../Brand.ts'
 
 export type MdCustomListAttributes = {
     name: string

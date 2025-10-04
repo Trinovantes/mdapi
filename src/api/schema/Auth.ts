@@ -1,5 +1,5 @@
-import type { Brand } from '../../Brand.js'
-import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
+import type { Brand } from '../../Brand.ts'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.ts'
 
 export type MdAccessToken = Brand<string, 'MdAccessToken'>
 export type MdRefreshToken = Brand<string, 'MdRefreshToken'>

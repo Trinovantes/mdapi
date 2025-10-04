@@ -1,10 +1,10 @@
-import type { MdAuthorAttributes, MdAuthorId } from './schema/Author.js'
-import type { MdChapterAttributes, MdChapterId } from './schema/Chapter.js'
-import type { MdCoverAttributes, MdCoverId } from './schema/Cover.js'
-import type { MdCustomListAttributes, MdCustomListId } from './schema/CustomList.js'
-import type { MdMangaAttributes, MdMangaId, MdMangaRelationshipType } from './schema/Manga.js'
-import type { MdScanlationGroupAttributes, MdScanlationGroupId } from './schema/ScanlationGroup.js'
-import type { MdTagAttributes, MdTagId } from './schema/Tag.js'
+import type { MdAuthorAttributes, MdAuthorId } from './schema/Author.ts'
+import type { MdChapterAttributes, MdChapterId } from './schema/Chapter.ts'
+import type { MdCoverAttributes, MdCoverId } from './schema/Cover.ts'
+import type { MdCustomListAttributes, MdCustomListId } from './schema/CustomList.ts'
+import type { MdMangaAttributes, MdMangaId, MdMangaRelationshipType } from './schema/Manga.ts'
+import type { MdScanlationGroupAttributes, MdScanlationGroupId } from './schema/ScanlationGroup.ts'
+import type { MdTagAttributes, MdTagId } from './schema/Tag.ts'
 
 type AttributeMap = {
     ['cover_art']: MdCoverAttributes

@@ -1,7 +1,7 @@
-import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
-import type { MdMangaId } from './Manga.js'
-import { MAX_IDS_PER_QUERY } from '../Constants.js'
-import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.ts'
+import type { MdMangaId } from './Manga.ts'
+import { MAX_IDS_PER_QUERY } from '../Constants.ts'
+import { createSearchParamUrl } from '../../utils/createSearchParamUrl.ts'
 
 // ----------------------------------------------------------------------------
 // MARK: API

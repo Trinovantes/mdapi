@@ -29,6 +29,7 @@
         "url": "https://www.stephenli.ca"
     },
     "scripts": {
+        "clean": "rm -rf ./dist ./demo/dist",
         "build": "vite build",
         "prepublishOnly": "rm -rf ./dist && pnpm build",
         "lint": "tsc && eslint",

@@ -1,9 +1,9 @@
-import type { MdCollectionResponse } from '../Response.js'
-import type { MdAccessToken } from './Auth.js'
-import { type MdChapterQuery, MD_FETCH_CHAPTERS_BASE_QUERY } from './Chapter.js'
-import { MD_FETCH_MANGA_BASE_QUERY, type MdMangaId, type MdMangaQuery } from './Manga.js'
-import { createSearchParamUrl } from '../../utils/createSearchParamUrl.js'
-import { fetchMangaDex } from '../../utils/fetchMangaDex.js'
+import type { MdCollectionResponse } from '../Response.ts'
+import type { MdAccessToken } from './Auth.ts'
+import { type MdChapterQuery, MD_FETCH_CHAPTERS_BASE_QUERY } from './Chapter.ts'
+import { MD_FETCH_MANGA_BASE_QUERY, type MdMangaId, type MdMangaQuery } from './Manga.ts'
+import { createSearchParamUrl } from '../../utils/createSearchParamUrl.ts'
+import { fetchMangaDex } from '../../utils/fetchMangaDex.ts'
 
 export type MdFollowsMangaListQuery = Pick<MdMangaQuery,
     | 'limit'

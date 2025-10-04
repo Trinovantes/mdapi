@@ -1,4 +1,4 @@
-import { MAX_IDS_PER_QUERY, MAX_PAGINATION_RESULTS } from '../api/Constants.js'
+import { MAX_IDS_PER_QUERY, MAX_PAGINATION_RESULTS } from '../api/Constants.ts'
 
 export type PaginationQuery = {
     offset: number
