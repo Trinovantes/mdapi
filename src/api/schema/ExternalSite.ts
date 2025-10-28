@@ -10,7 +10,7 @@ export const MD_TRACKING_SITES = [
     { label: 'AniList', value: 'al', getUrl: (val: string) => `https://anilist.co/manga/${val}` },
     { label: 'Anime Planet', value: 'ap', getUrl: (val: string) => `https://www.anime-planet.com/manga/${val}` },
     { label: 'Kitsu', value: 'kt', getUrl: (val: string) => `https://kitsu.io/manga/${val}` },
-    { label: 'Manga Updates', value: 'mu', getUrl: (val: string) => `https://www.mangaupdates.com/series.html?id=${val}` },
+    { label: 'Manga Updates', value: 'mu', getUrl: (val: string) => isInt(val) ? `https://www.mangaupdates.com/series.html?id=${val}` : `https://www.mangaupdates.com/series/${val}` },
     { label: 'MyAnimeList', value: 'mal', getUrl: (val: string) => `https://myanimelist.net/manga/${val}` },
     { label: 'Novel Updates', value: 'nu', getUrl: (val: string) => `https://www.novelupdates.com/series/${val}` },
 ] as const
@@ -47,4 +47,8 @@ export function getSourceUrl(src: MdExternalSite, val: string): string {
     }
 
     throw new Error(`Source "${src}" not implemented`)
+}
+
+function isInt(val: string): boolean {
+    return /^(\d+)$/.test(val)
 }
