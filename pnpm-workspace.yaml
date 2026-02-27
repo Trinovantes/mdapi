@@ -1,2 +1,5 @@
 ignoredBuiltDependencies:
   - esbuild
+
+overrides:
+  '@types/node': '^24'

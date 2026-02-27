@@ -37,21 +37,21 @@
         "cloc": "cloc --vcs=git"
     },
     "devDependencies": {
-        "@eslint/compat": "^1.4.0",
-        "@eslint/js": "^9.38.0",
-        "@stylistic/eslint-plugin": "^5.5.0",
-        "@types/node": "^24.9.1",
-        "eslint": "^9.38.0",
-        "eslint-plugin-n": "^17.23.1",
-        "eslint-plugin-vue": "^10.5.1",
-        "globals": "^16.4.0",
-        "typescript": "^5.9.3",
-        "typescript-eslint": "^8.46.2",
-        "vite": "^7.1.12",
+        "@eslint/compat": "^2.0.3",
+        "@eslint/js": "^10.0.1",
+        "@stylistic/eslint-plugin": "^5.10.0",
+        "@types/node": "^24.12.0",
+        "eslint": "^10.1.0",
+        "eslint-plugin-n": "^17.24.0",
+        "eslint-plugin-vue": "^10.8.0",
+        "globals": "^17.4.0",
+        "typescript": "^6.0.2",
+        "typescript-eslint": "^8.57.2",
+        "vite": "^8.0.2",
         "vite-plugin-dts": "^4.5.4",
-        "vitest": "^4.0.4",
-        "vue": "^3.5.22",
-        "vue-eslint-parser": "^10.2.0",
-        "vue-tsc": "^3.1.2"
+        "vitest": "^4.1.1",
+        "vue": "^3.5.30",
+        "vue-eslint-parser": "^10.4.0",
+        "vue-tsc": "^3.2.6"
     }
 }
