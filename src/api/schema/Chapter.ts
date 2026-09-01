@@ -26,9 +26,10 @@ export type MdChapterId = Brand<string, 'MdChapterId'>
 export type MdChapter = MdEntityResponse<'chapter'>['data']
 
 export type MdChapterQuery = Partial<{
+    'ids': Array<MdChapterId>
+
     'limit': number
     'offset': number
-    'ids': Array<MdChapterId>
     'includes': Array<MdAttributeType>
 
     'order[createdAt]': MdSortOrder
@@ -38,20 +39,26 @@ export type MdChapterQuery = Partial<{
     'order[chapter]': MdSortOrder
 
     'title': string
-    'groups': Array<MdScanlationGroupId>
-    'uploader': MdUploaderId
     'manga': MdMangaId
     'volume': Array<string>
     'chapter': Array<string>
+    'groups': Array<MdScanlationGroupId>
+    'excludedGroups': Array<MdScanlationGroupId>
+    'uploader': MdUploaderId
+    'excludedUploaders': Array<MdUploaderId>
     'translatedLanguage': Array<MdLanguage>
     'originalLanguage': Array<MdLanguage>
     'excludedOriginalLanguage': Array<MdLanguage>
     'contentRating': Array<MdContentRating>
 
+    'externalUrl': string
+    'excludeExternalUrl': string
+
     'includeFutureUpdates': '0' | '1'
-    'includeEmptyPages ': '0' | '1'
+    'includeEmptyPages': '0' | '1'
     'includeFuturePublishAt': '0' | '1'
-    'includeExternalUrl  ': '0' | '1'
+    'includeExternalUrl': '0' | '1'
+    'includeUnavailable': '0' | '1'
 
     'createdAtSince': string
     'updatedAtSince': string

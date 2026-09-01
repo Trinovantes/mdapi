@@ -103,9 +103,10 @@ export type MdMangaId = Brand<string, 'MdMangaId'>
 export type MdManga = MdEntityResponse<'manga'>['data']
 
 export type MdMangaQuery = Partial<{
+    'ids': Array<MdMangaId>
+
     'limit': number
     'offset': number
-    'ids': Array<MdMangaId>
     'includes': Array<MdAttributeType>
 
     'order[title]': MdSortOrder

@@ -18,7 +18,6 @@ export type MdLoginPayload = {
 export type MdLoginResponse = {
     access_token: MdAccessToken
     expires_in: number // sec
-
     refresh_token: MdRefreshToken
     refresh_expires_in: number // sec
 }
@@ -44,7 +43,6 @@ export async function fetchLogin(apiUrl: string, payload: MdLoginPayload, header
 export type RefreshResponse = {
     access_token: string
     expires_in: number // sec
-
     refresh_token: string
     refresh_expires_in: number // sec
 }

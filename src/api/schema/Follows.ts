@@ -15,6 +15,7 @@ export type MdFollowsMangaListQuery = Pick<MdMangaQuery,
 export type MdFollowsChapterFeedQuery = Pick<MdChapterQuery,
     | 'limit'
     | 'offset'
+    | 'includes'
 
     | 'order[createdAt]'
     | 'order[updatedAt]'
@@ -22,17 +23,25 @@ export type MdFollowsChapterFeedQuery = Pick<MdChapterQuery,
     | 'order[volume]'
     | 'order[chapter]'
 
+    | 'excludedGroups'
+    | 'excludedUploaders'
     | 'translatedLanguage'
     | 'originalLanguage'
     | 'excludedOriginalLanguage'
     | 'contentRating'
+
+    | 'externalUrl'
+    | 'excludeExternalUrl'
+
     | 'includeFutureUpdates'
+    | 'includeEmptyPages'
+    | 'includeFuturePublishAt'
+    | 'includeExternalUrl'
+    | 'includeUnavailable'
 
     | 'createdAtSince'
     | 'updatedAtSince'
     | 'publishAtSince'
-
-    | 'includes'
 >
 
 // ----------------------------------------------------------------------------
