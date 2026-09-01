@@ -3,7 +3,7 @@ import type { MdContentRating, MdMangaId } from './Manga.ts'
 import type { MdAttributeType, MdCollectionResponse, MdEntityResponse } from '../Response.ts'
 import type { MdSortOrder } from './SortOrder.ts'
 import type { MdScanlationGroupId } from './ScanlationGroup.ts'
-import type { MdUploaderId } from './Uploader.ts'
+import type { MdUserId } from './User.ts'
 import type { Brand } from '../../Brand.ts'
 import { fetchMangaDex, fetchMangaDexByIds } from '../../utils/fetchMangaDex.ts'
 import { createSearchParamUrl } from '../../utils/createSearchParamUrl.ts'
@@ -44,8 +44,8 @@ export type MdChapterQuery = Partial<{
     'chapter': Array<string>
     'groups': Array<MdScanlationGroupId>
     'excludedGroups': Array<MdScanlationGroupId>
-    'uploader': MdUploaderId
-    'excludedUploaders': Array<MdUploaderId>
+    'uploader': MdUserId | Array<MdUserId>
+    'excludedUploaders': Array<MdUserId>
     'translatedLanguage': Array<MdLanguage>
     'originalLanguage': Array<MdLanguage>
     'excludedOriginalLanguage': Array<MdLanguage>

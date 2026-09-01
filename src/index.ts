@@ -16,7 +16,7 @@ export * from './api/schema/SortOrder.ts'
 export * from './api/schema/Statistics.ts'
 export * from './api/schema/Tag.ts'
 export * from './api/schema/TagSearchMode.ts'
-export * from './api/schema/Uploader.ts'
+export * from './api/schema/User.ts'
 
 export * from './utils/createPaginationQuery.ts'
 export * from './utils/createSearchParamUrl.ts'
