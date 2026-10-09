@@ -1,5 +1,6 @@
 overrides:
-  '@types/node': '^24'
+  '@types/node': '^26'
+  'typescript': '^6'
 
 allowBuilds:
-  esbuild: false
+  'esbuild': false
